@@ -6,7 +6,6 @@ import 'package:flutter/material.dart';
 import 'package:screenshot/screenshot.dart';
 
 class PrintCard extends StatefulWidget {
-  static String routeName = '/print_card';
   const PrintCard({Key? key}) : super(key: key);
 
   @override
@@ -63,7 +62,6 @@ class _PrintCard extends State<PrintCard> {
             width: 300,
             child: TextField(
                 decoration: const InputDecoration(labelText: 'Input Your Name'),
-                // controller: amountController,
                 onChanged: (String value) async {
                   userName = value;
                   setState(() {});
